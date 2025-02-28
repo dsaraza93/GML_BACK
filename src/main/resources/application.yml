@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: none  # No dejar que Hibernate gestione las tablas
+  sql:
+    init:
+      mode: always  # Permite que Spring Boot ejecute schema.sql y data.sql
